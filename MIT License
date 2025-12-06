@@ -1,0 +1,41 @@
+
+```python
+"""
+CONFIGURATION TEMPLATE
+Copy this file to config.py and fill with your actual keys
+NEVER commit config.py with real keys to GitHub!
+"""
+
+# Telegram Bot Token from @BotFather
+BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"
+
+# OpenRouter API Key (https://openrouter.ai)
+OPENROUTER_API_KEY = "sk-or-v1-xxxxxxxxxxxxxxxxxxxx"
+
+# Encryption key for user data
+# Generate with: fernet.Fernet.generate_key()
+ENCRYPTION_KEY = b'YOUR_ENCRYPTION_KEY_HERE'
+
+# Your Telegram User ID (for admin commands)
+ADMIN_ID = 123456789
+
+# Timezone for logs
+TIMEZONE = 'Europe/Moscow'
+
+# File paths
+LOG_FILE = 'user_data.encrypted'
+HISTORY_FILE = 'chat_history.json'
+SETTINGS_FILE = 'user_settings.json'
+BANNED_USERS_FILE = 'banned_users.txt'
+
+# AI Models to cycle through
+AI_MODELS = [
+    "openai/gpt-3.5-turbo",
+    "google/gemini-flash-1.5", 
+    "mistralai/mistral-7b-instruct"
+]
+
+# Voice settings
+DEFAULT_VOICE_TYPE = 'female'  # 'male' or 'female'
+DEFAULT_VOICE_SPEED = 1.0
+DEFAULT_VOICE_PITCH = 0.5
